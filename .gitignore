@@ -1,0 +1,5 @@
+# Ignore specific folders and files
+unzipped_model/
+airline_review_cleaned.csv
+avg_ratings_per_airline.csv
+model_logreg.zip
