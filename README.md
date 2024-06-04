@@ -13,9 +13,6 @@
 ![Next.js](https://badgen.net/badge/Next.js/[version]/black?)
 ![Go](https://badgen.net/badge/Go/[version]/cyan?)
 ![Rust](https://badgen.net/badge/Rust/[version]/orange?)
-![C](https://badgen.net/badge/C/[version]/blue?)
-![C++](https://badgen.net/badge/C++/[version]/blue?)
-![C#](https://badgen.net/badge/C%23/[version]/blue?)
 ![Docker](https://badgen.net/badge/Docker/[version]/cyan?)
 ![Size](https://img.shields.io/github/languages/code-size/[githubusername]/[repositoryname].svg)
 ![License](https://img.shields.io/github/license/[githubusername]/[repositoryname].svg)
@@ -192,10 +189,6 @@ additional images, gifs or videos of your project
 
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
 
-![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
-
-![Angular.js](https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white)
-
 ![Apollo-GraphQL](https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql)
 
 ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -211,12 +204,6 @@ additional images, gifs or videos of your project
 ![Electron.js](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white)
 
 ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=#D04A37)
-
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-
-![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
-
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
 
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 
