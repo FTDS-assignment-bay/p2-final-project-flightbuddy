@@ -1,7 +1,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15181173&assignment_repo_type=AssignmentRepo)
 
 <div align='center'>
-    <h1><b>🎂 [PROJECTNAME] 🎂</b></h1>
+    <h1><b> FlightBuddy </b></h1>
     <img src='' width='250' height='250' />
     <p>Short description of the project.</p>
 
