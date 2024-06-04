@@ -65,18 +65,43 @@ similarity_matrix = cosine_similarity(normalized_data)
 # Convert the similarity matrix to a DataFrame
 similarity_df = pd.DataFrame(similarity_matrix, index=df['airline_name'], columns=df['airline_name'])
 
-# Function to get recommendations based on cosine similarity
-def get_similar_airlines(airline, n_recommendations=5):
-
+# Create function to recommend 5 similar airlines for positive reviews
+def recommendation_positive(airline, n_recommendations=5):
     # Get the similarity scores for the specified airline with all others
     similar_scores = similarity_df[airline].sort_values(ascending=False)
 
     # Remove the airline itself from the recommendation
     similar_scores = similar_scores.drop(airline)
 
-    # Get the top N similar airlines
-    top_airlines = similar_scores.head(n_recommendations)
-    return top_airlines
+    # Reset index to ensure alignment with df
+    similar_scores.reset_index(drop=True, inplace=True)
+
+    # Get the top N similar airlines based on positive reviews
+    top_positive_airlines = similar_scores.head(n_recommendations)
+
+    # Get the airline names corresponding to the top positive airlines
+    top_airlines_with_names = df.loc[top_positive_airlines.index, 'airline_name']
+
+    # Create a DataFrame with airline names and similarity scores
+    top_positive_df = pd.DataFrame({'Airline': top_airlines_with_names.values, 'Similarity Score': top_positive_airlines.values})
+
+    return top_positive_df
+
+# Create function to recommend top 5 airlines for negative reviews
+def recommendation_negative(airline, n_recommendations=5):
+    # Calculate the mean ratings for all airlines
+    mean_ratings = df[rating_columns].mean(axis=1)
+
+    # Get the top N airlines based on overall positive reviews
+    top_airlines = mean_ratings.nlargest(n_recommendations)
+
+    # Get the airline names corresponding to the top airlines
+    top_airlines_with_names = df.loc[top_airlines.index, 'airline_name']
+
+    # Create a DataFrame with airline names and mean ratings
+    top_airlines_df = pd.DataFrame({'Airline': top_airlines_with_names.values, 'Mean Rating': top_airlines.values})
+
+    return top_airlines_df
 
 def run():
     st.title('Airplane Review Analysis')
@@ -107,14 +132,14 @@ def run():
                 st.error("Negative Feedback - Not Recommended")
                 st.subheader("Top 5 Airlines Recommendations:")
                 st.write("Since this feedback indicates a less positive experience, here are top 5 airlines recommended by reviewers:")
-                similar_airlines = get_similar_airlines(selected_airline)
+                similar_airlines = recommendation_negative(selected_airline)
                 st.write(similar_airlines)
                 
             elif predicted_label == 1:
                 st.success("Positive Feedback - Recommended")
                 st.subheader("Similar Airlines Recommendations:")
                 st.write("Since this feedback indicates a positive experience, here are 5 similar airlines:")
-                similar_airlines = get_similar_airlines(selected_airline)
+                similar_airlines = recommendation_positive(selected_airline)
                 st.write(similar_airlines)
 
             st.subheader("Extracted Feedback Text:")
