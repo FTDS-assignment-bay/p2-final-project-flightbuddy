@@ -196,7 +196,7 @@ default_args = {'owner': 'group2',
 # Define the DAG with the given name, default arguments, and schedule interval
 with DAG ('flightBuddy',
           default_args = default_args,
-          schedule_interval = '00 00 * * 1') as dag:
+          schedule_interval = '0 0 1 * *') as dag:
     
           # First task : calling 'get_data' function
           getData = PythonOperator(task_id = 'GetData',
