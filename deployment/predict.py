@@ -86,11 +86,11 @@ def run():
         col1, col2 = st.columns(2)
         with col1:
             airline = st.selectbox("Select an Airline", df['airline_name'])
-            aircraft = st.text_input("Aircraft Model", help="Enter the model of the aircraft you flew with.")
+            aircraft = st.text_input("Aircraft Model", help="Enter the model of the aircraft you flew with. Skip if you don't know")
             type_of_traveller = st.selectbox('Type of Traveller', raw['type_of_traveller'].unique(), help="Choose the type of traveller you were during the flight.")
         with col2:
             seat_type = st.selectbox('Type of Seat', raw['seat_type'].unique(), help="Choose the type of seat you had during the flight.")
-            route = st.text_input("Route", help="Enter the route of your travel, from departure to destination.")
+            route = st.text_input("Route", help="Enter the route of your travel, from departure to destination. Ex: Frankfurt to Pristina")
             date_flown = st.date_input("Date Flown", help="Select the date when you flew.")
 
     # User input for rating experience
