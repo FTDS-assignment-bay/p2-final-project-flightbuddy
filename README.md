@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 <div align='center'>
     <h1><b>FlightBuddy</b></h1>
     <img src='deployment/companyLogo.png'/>
@@ -166,6 +168,8 @@ By following these setup instructions, you'll be able to replicate the FlightBud
 ## 🚀 **Deployment**
 The application is deployed on Hugging Face Spaces. Access it using the following link:
 [FlightBuddy on Hugging Face](https://huggingface.co/spaces/liviamanda/FlightBuddy)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
