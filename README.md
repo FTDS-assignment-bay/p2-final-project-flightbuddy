@@ -62,84 +62,68 @@ The main goal of FlightBuddy is to improve the decision-making process for trave
 
 ---
 
-## 🗒️ **Installation**
+## 🗒️ **Setup and Installation**
 
-### Local Installation in Visual Studio Code:
+To get started with FlightBuddy, ensure you have the following prerequisites:
+
+- **Dataset**: Accessible [here](https://www.kaggle.com/datasets/juhibhojani/airline-reviews/data).
+- **Python**: Version 3.9.18 or later.
+- **Docker**: Version 20.10 or later for container deployment.
+
+### **Environment Configuration**
+Ensure you have all necessary Python packages by installing them from the provided `requirements.txt`. Also, ensure Docker is set up if you prefer containerized environments.
+
+### **Project Setup**
+Follow these steps to set up the project:
 
 1. **Clone the Repository**
-   You can clone the repository using either HTTPS or SSH. Choose the method that best suits your setup:
-
+   Clone this repository to your local machine. Choose the method that best suits your setup:
    - **HTTPS**:
      ```
      git clone https://github.com/FTDS-assignment-bay/p2-final-project-flightbuddy/
      ```
-
    - **SSH**:
      ```
      git clone git@github.com:FTDS-assignment-bay/p2-final-project-flightbuddy.git
      ```
 
-2. **Navigate to the Repository Directory**
-   - Change directory to the cloned repository:
-     ```
-     cd repo
-     ```
+2. **Compose Docker Containers (Optional)**
+   If you prefer using Docker, build and run the Docker container as follows:
+```
+docker build -t flightbuddy-app .
+docker run -it flightbuddy-app
+```
 
-3. **Open Visual Studio Code**
-   - Open the project directory in Visual Studio Code:
-     ```
-     code .
-     ```
 
-4. **Set Up a Python Virtual Environment (optional)**
-   - It's a good practice to use a virtual environment for Python projects. Here’s how to set up one in Visual Studio Code:
-     - Open the terminal in Visual Studio Code (Ctrl+` or View -> Terminal).
-     - Install the virtual environment if you haven't installed it:
-       ```
-       pip install virtualenv
-       ```
-     - Create a virtual environment:
-       ```
-       virtualenv venv
-       ```
-     - Activate the virtual environment:
-       - On Windows:
-         ```
-         .\venv\Scripts\activate
-         ```
-       - On MacOS/Linux:
-         ```
-         source venv/bin/activate
-         ```
+3. **Environment Setup**
+- Navigate to the cloned directory:
+  ```
+  cd p2-final-project-flightbuddy
+  ```
+- Set up a virtual environment (optional but recommended):
+  ```
+  python -m venv venv
+  source venv/bin/activate  # On MacOS/Linux
+  .\venv\Scripts\activate   # On Windows
+  ```
+- Install the required dependencies:
+  ```
+  pip install -r requirements.txt
+  ```
 
-5. **Install Dependencies**
-   - Install the required Python packages using pip:
-     ```
-     pip install -r requirements.txt
-     ```
+4. **Run the Application**
+Execute the main application script:
+```
+python app.py
+```
 
-6. **Run the Application**
-   - Run the Python script or application:
-     ```
-     python main.py
-     ```
+5. **Access and Use**
+After starting the application, you can access and interact with it as specified in your project documentation.
 
-### Installation via Docker:
+### **Additional Resources**
+For further exploration or modifications, access the full project documentation and source code on the [GitHub repository](https://github.com/FTDS-assignment-bay/p2-final-project-flightbuddy/).
 
-If you prefer to use Docker, follow these steps:
-
-1. **Build the Docker Image**
-   - Build an image from the Dockerfile present in your project directory:
-     ```
-     docker build -t app .
-     ```
-
-2. **Run the Docker Container**
-   - Run your application inside a Docker container:
-     ```
-     docker run -it app
-     ```
-<br />
+By following these setup instructions, you'll be able to replicate the FlightBuddy project and explore its functionalities related to analyzing airline review sentiments.
 
 ---
 
@@ -160,25 +144,3 @@ If you prefer to use Docker, follow these steps:
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=white)
-
-<br />
-
----
-
-## 📌 **LINKS**
-
-[<img alt="Github" src="https://img.shields.io/badge/[username]-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/[username])
-[<img alt="Twitter" src="https://img.shields.io/badge/[username]-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" />](https://twitter.com/[username])
-[<img alt="Instagram" src="https://img.shields.io/badge/[username]-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />](https://instagram.com/[username])
-[<img alt="Youtube" src="https://img.shields.io/badge/[username]-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" />](https://www.youtube.com/channel/[username])
-
-[<img alt="Reddit" src="https://img.shields.io/badge/[username]-FF4500?style=for-the-badge&logo=reddit&logoColor=white" />](https://reddit.com/user/[username])
-[<img alt="TikTok" src="https://img.shields.io/badge/[username]-%23000000.svg?style=for-the-badge&logo=TikTok&logoColor=white" />](https://www.tiktok.com/@[username])
-[<img alt="Gitlab" src="https://img.shields.io/badge/[username]-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white" />](https://gitlab.com/[username])
-[<img alt="Dribbble" src="https://img.shields.io/badge/[username]-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white" />](https://dribbble.com/[username])
-
-[<img alt="Stack Overflow" src="https://img.shields.io/badge/[username]-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" />](https://stackoverflow.com/users/[usercode]/[username])
-[<img alt="Discord" src="https://img.shields.io/badge/[username%23code]-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white" />]()
-[<img alt="Steam" src="https://img.shields.io/badge/[username]-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white" />](https://steamcommunity.com/id/[username])
-[<img alt="Spotify" src="https://img.shields.io/badge/[username]-1ED760?style=for-the-badge&logo=spotify&logoColor=white" />](https://open.spotify.com/user/[username])
-
