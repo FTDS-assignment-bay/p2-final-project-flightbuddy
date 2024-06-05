@@ -2,7 +2,7 @@
 
 <div align='center'>
     <h1><b> FlightBuddy </b></h1>
-    <img src='https://drive.google.com/drive/folders/13ml9ypHGQ8g2I2thFh8fHZowjjbvxYUc' width='250' height='250' />
+    <img src='deployment/companyLogo.png' width='250' height='250' />
     <p>Short description of the project.</p>
 
 ![Python](https://badgen.net/badge/Python/[version]/blue?)
