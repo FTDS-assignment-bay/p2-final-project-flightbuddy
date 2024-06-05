@@ -70,10 +70,10 @@ To get started with FlightBuddy, ensure you have the following prerequisites:
 - **Python**: Version 3.9.18 or later.
 - **Docker**: Version 20.10 or later for container deployment.
 
-### **Environment Configuration**
+### **Environment Configuration**  
 Ensure you have all necessary Python packages by installing them from the provided `requirements.txt`. Also, ensure Docker is set up if you prefer containerized environments.
 
-### **Project Setup**
+### **Project Setup**  
 Follow these steps to set up the project:
 
 1. **Clone the Repository**
@@ -87,7 +87,7 @@ Follow these steps to set up the project:
      git clone git@github.com:FTDS-assignment-bay/p2-final-project-flightbuddy.git
      ```
 
-2. **Compose Docker Containers (Optional)**
+2. **Compose Docker Containers (Optional)**  
    If you prefer using Docker, build and run the Docker container as follows:
 ```
 docker build -t flightbuddy-app .
@@ -95,7 +95,7 @@ docker run -it flightbuddy-app
 ```
 
 
-3. **Environment Setup**
+3. **Environment Setup**  
 - Navigate to the cloned directory:
   ```
   cd p2-final-project-flightbuddy
@@ -111,16 +111,16 @@ docker run -it flightbuddy-app
   pip install -r requirements.txt
   ```
 
-4. **Run the Application**
+4. **Run the Application**  
 Execute the main application script:
 ```
 python app.py
 ```
 
-5. **Access and Use**
+5. **Access and Use**  
 After starting the application, you can access and interact with it as specified in your project documentation.
 
-### **Additional Resources**
+### **Additional Resources**  
 For further exploration or modifications, access the full project documentation and source code on the [GitHub repository](https://github.com/FTDS-assignment-bay/p2-final-project-flightbuddy/).
 
 By following these setup instructions, you'll be able to replicate the FlightBuddy project and explore its functionalities related to analyzing airline review sentiments.
