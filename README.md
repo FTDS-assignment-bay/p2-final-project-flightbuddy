@@ -3,7 +3,8 @@
 <div align='center'>
     <h1><b> FlightBuddy </b></h1>
     <img src='deployment/companyLogo.png'/>
-    <p>Short description of the project.</p>
+    <h1><b>  </b></h1>
+    <p> This project is focused on creating an Natural Language Proceesing (NLP) model that can determine if reviews are positive or negative (performing sentiment analysis) and provide recommendations based on the results.</p>
 
 ![Python](https://badgen.net/badge/Python/[version]/blue?)
 ![JavaScript](https://badgen.net/badge/JavaScript/[version]/yellow?)
