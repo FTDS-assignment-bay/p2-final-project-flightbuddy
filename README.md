@@ -1,5 +1,3 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15181173&assignment_repo_type=AssignmentRepo)
-
 <div align='center'>
     <h1><b> FlightBuddy </b></h1>
     <img src='deployment/companyLogo.png'/>
@@ -19,6 +17,16 @@
 ![License](https://img.shields.io/github/license/[githubusername]/[repositoryname].svg)
 ![Top Language](https://img.shields.io/github/languages/top/[githubusername]/[repositoryname].svg)
 ![GitHub version](https://badge.fury.io/gh/[githubusername]%2F[repositoryname].svg)
+
+![Streamlit](https://badgen.net/badge/Streamlit/[version]/orange?)
+![Pandas](https://badgen.net/badge/Pandas/1.4.3/blue?)
+![Seaborn](https://badgen.net/badge/Seaborn/[version]/green?)
+![Matplotlib](https://badgen.net/badge/Matplotlib/3.5.2/blue?)
+![Scikit-learn](https://badgen.net/badge/scikit-learn/1.4.2/yellow?)
+![Plotly](https://badgen.net/badge/Plotly/5.22.0/cyan?)
+![TensorFlow](https://badgen.net/badge/TensorFlow/2.15.0/orange?)
+![WordCloud](https://badgen.net/badge/WordCloud/[version]/purple?)
+![NLTK](https://badgen.net/badge/NLTK/[version]/red?)
 
 </div>
 
