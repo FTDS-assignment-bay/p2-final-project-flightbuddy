@@ -11,7 +11,7 @@ custom_palette = px.colors.qualitative.Set3
 
 # Function to generate word cloud
 def generate_wordcloud(text, title, ax):
-    if text.strip():  # Check if text is not empty
+    if text.strip():
         wordcloud = WordCloud(width=400, height=200, background_color='white').generate(text)
         ax.imshow(wordcloud, interpolation='bilinear')
         ax.set_title(title, size=15)
@@ -27,7 +27,7 @@ def run():
     data = pd.read_csv('airline_review_cleaned.csv')
     
     # Add title to the app
-    st.title('Exploratory Data Analysis on Airline Reviews')
+    st.title('Exploratory Data Analysis')
     
     # Checkbox to display raw data
     if st.checkbox('Show raw data'):

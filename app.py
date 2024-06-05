@@ -1,9 +1,8 @@
-import eda
-import predict
+import eda, predict
 import streamlit as st
 
 # Add side bar for navigation
-navigation = st.sidebar.selectbox('Navigation', ['Home', 'Exploratory Data Analysis', 'Review Predictor'])
+navigation = st.sidebar.selectbox('Navigation', ['Home', 'Exploratory Data Analysis', 'Review Prediction'])
 
 st.sidebar.markdown('# About')
 
@@ -29,23 +28,56 @@ st.sidebar.write('''### Tools Utilized:
 
 # Define the Home Page
 def show_home():
-    st.title('Welcome to Airline Review Analysis Tool')
+    st.image('logoCompany.png', caption='Source: Canva')
     st.write('''This tool provides functionalities for Exploratory Data Analysis and Prediction regarding airline reviews. Use the navigation pane on the left to select the module you wish to utilize.''')
-    st.image('logo 2.png', caption='Source: Canva')
     st.markdown('---')
-    st.write('#### 📈 Dataset')
-    st.markdown('''The dataset is sourced reliably and contains pertinent information on airline reviews. For additional details or to download the dataset, visit the provided source.''')
-    st.write('#### ⚠️ Problem Statement')
-    st.markdown('''Airlines face challenges in understanding customer satisfaction through reviews. This tool helps in analyzing and predicting sentiments from reviews, enabling airlines to improve their services.''')
-    st.write('#### 💡 Objective')
-    st.markdown('''This project focuses on creating a classification model to predict review sentiments, selecting the best performer among various models. The key evaluation metric for assessing model performance is accuracy.''')
+    
+    # Dataset section
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        st.image('1.png', use_column_width=True)
+    with col2:
+        st.markdown('### Dataset')
+        st.markdown('''The dataset is obtained from a credible source and comprises relevant details regarding airline reviews. For further information or to access the dataset, please refer to the provided source [Airline Reviews](https://www.kaggle.com/datasets/juhibhojani/airline-reviews/data).''')
+    
+    # Problem Statement section
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.image('2.png', use_column_width=True)
+    with col2:
+        st.markdown('### Problem Statement')
+        st.markdown('''Choosing the right airline can greatly affect a traveler's overall experience, including comfort, service quality, and in-flight amenities. With many online reviews available, airline passengers often **rely on these reviews** to make informed decisions about which airline to choose. However, the large number of reviews can make it difficult and **time-consuming** to read through and understand the general opinion about an airline.''')
+        st.markdown('''**FlightBuddy** aims to solve this problem by using advanced Natural Language Processing (NLP) techniques to analyze airline reviews quickly and accurately. By processing and understanding a large number of reviews, FlightBuddy can determine whether the opinions in the reviews are positive or negative.''')
+    
+    # Objective section
+    st.write('')
+    st.write('')
+    st.write('')
+    col1, col2 = st.columns([1, 2])
+    with col1:
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.write('')
+        st.image('3.png', use_column_width=True)
+    with col2:
+        st.markdown('### Objective')
+        st.markdown('''The main goal of **FlightBuddy** is to improve the decision-making process for travelers by providing personalized airline recommendations based on the analysis of review sentiments. Specifically, FlightBuddy aims to:
 
+- Analyze the sentiment of airline reviews to classify them as positive or negative, with accuracy serving as the metric.
+- Recommend five airlines with similar positive characteristics for users who have seen favorable reviews.
+- Suggest top-rated alternative airlines for users who have encountered negative experiences, ensuring they have better options for future travel.''')
 
-
-# Create condition to access different pages
 if navigation == 'Home':
     show_home()
 elif navigation == 'Exploratory Data Analysis':
     eda.run()
-elif navigation == 'Review Predictor':
+elif navigation == 'Review Prediction':
     predict.run()
