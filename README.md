@@ -67,9 +67,16 @@ The main goal of FlightBuddy is to improve the decision-making process for trave
 ### Local Installation in Visual Studio Code:
 
 1. **Clone the Repository**
-   - Clone the repository to your local machine using Git:
+   You can clone the repository using either HTTPS or SSH. Choose the method that best suits your setup:
+
+   - **HTTPS**:
      ```
-     git clone https://github.com/username/repo
+     git clone https://github.com/FTDS-assignment-bay/p2-final-project-flightbuddy/
+     ```
+
+   - **SSH**:
+     ```
+     git clone git@github.com:FTDS-assignment-bay/p2-final-project-flightbuddy.git
      ```
 
 2. **Navigate to the Repository Directory**
@@ -132,26 +139,6 @@ If you prefer to use Docker, follow these steps:
      ```
      docker run -it app
      ```
-
-### Run Remotely via Docker:
-
-To run the Docker image from a remote repository:
-
-1. **Pull and Run the Docker Image**
-   - Pull the image from Docker Hub and run it:
-     ```
-     docker pull username/dockerimage:version
-     docker run -it username/dockerimage:version
-     ```
-
-<br />
-
----
-
-## 🔎 **SHOWCASE**
-
-Additional images, gifs, or videos of your project.
-
 <br />
 
 ---
