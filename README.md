@@ -4,29 +4,17 @@
     <h1><b>  </b></h1>
     <p> This project is focused on creating an Natural Language Proceesing (NLP) model that can determine if reviews are positive or negative (performing sentiment analysis) and provide recommendations based on the results.</p>
 
-![Python](https://badgen.net/badge/Python/[version]/blue?)
-![JavaScript](https://badgen.net/badge/JavaScript/[version]/yellow?)
-![TypeScript](https://badgen.net/badge/TypeScript/[version]/blue?)
-![Node.js](https://badgen.net/badge/Node.js/[version]/green?)
-![React](https://badgen.net/badge/React/[version]/cyan?)
-![Next.js](https://badgen.net/badge/Next.js/[version]/black?)
-![Go](https://badgen.net/badge/Go/[version]/cyan?)
-![Rust](https://badgen.net/badge/Rust/[version]/orange?)
-![Docker](https://badgen.net/badge/Docker/[version]/cyan?)
-![Size](https://img.shields.io/github/languages/code-size/[githubusername]/[repositoryname].svg)
-![License](https://img.shields.io/github/license/[githubusername]/[repositoryname].svg)
-![Top Language](https://img.shields.io/github/languages/top/[githubusername]/[repositoryname].svg)
-![GitHub version](https://badge.fury.io/gh/[githubusername]%2F[repositoryname].svg)
-
-![Streamlit](https://badgen.net/badge/Streamlit/[version]/orange?)
+![Python](https://badgen.net/badge/Python/[3.9.18]/blue?)
+![Streamlit](https://badgen.net/badge/Streamlit/[1.10.0]/orange?)
 ![Pandas](https://badgen.net/badge/Pandas/1.4.3/blue?)
-![Seaborn](https://badgen.net/badge/Seaborn/[version]/green?)
+![Seaborn](https://badgen.net/badge/Seaborn/[0.11.2]/green?)
 ![Matplotlib](https://badgen.net/badge/Matplotlib/3.5.2/blue?)
 ![Scikit-learn](https://badgen.net/badge/scikit-learn/1.4.2/yellow?)
 ![Plotly](https://badgen.net/badge/Plotly/5.22.0/cyan?)
 ![TensorFlow](https://badgen.net/badge/TensorFlow/2.15.0/orange?)
-![WordCloud](https://badgen.net/badge/WordCloud/[version]/purple?)
-![NLTK](https://badgen.net/badge/NLTK/[version]/red?)
+![WordCloud](https://badgen.net/badge/WordCloud/1.8.1/purple?)
+![NLTK](https://badgen.net/badge/NLTK/3.7/red?)
+![Docker](https://badgen.net/badge/Docker/20.10/cyan?)
 
 </div>
 
