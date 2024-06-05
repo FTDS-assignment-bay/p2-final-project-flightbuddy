@@ -1,13 +1,14 @@
 <div align='center'>
-    <h1><b> FlightBuddy </b></h1>
+    <h1><b>FlightBuddy</b></h1>
     <img src='deployment/companyLogo.png'/>
-    <h1><b>  </b></h1>
-    <p> This project is focused on creating an Natural Language Proceesing (NLP) model that can determine if reviews are positive or negative (performing sentiment analysis) and provide recommendations based on the results.</p>
+    <br><br>
+    <p>This project is focused on creating a Natural Language Processing (NLP) model that can determine if reviews are positive or negative (performing sentiment analysis) and provide recommendations based on the results.</p>
+    <br>
 
-![Python](https://badgen.net/badge/Python/[3.9.18]/blue?)
-![Streamlit](https://badgen.net/badge/Streamlit/[1.10.0]/orange?)
+![Python](https://badgen.net/badge/Python/3.9.18/blue?)
+![Streamlit](https://badgen.net/badge/Streamlit/1.10.0/orange?)
 ![Pandas](https://badgen.net/badge/Pandas/1.4.3/blue?)
-![Seaborn](https://badgen.net/badge/Seaborn/[0.11.2]/green?)
+![Seaborn](https://badgen.net/badge/Seaborn/0.11.2/green?)
 ![Matplotlib](https://badgen.net/badge/Matplotlib/3.5.2/blue?)
 ![Scikit-learn](https://badgen.net/badge/scikit-learn/1.4.2/yellow?)
 ![Plotly](https://badgen.net/badge/Plotly/5.22.0/cyan?)
@@ -20,103 +21,128 @@
 
 ---
 
-## 💾 **ABOUT**
+## 🧑‍💻 **Team Members**
 
-this is the **only** _README template_ for your project you will ever need in your life - **trust me**
+- **Livia Amanda Annafiah**
+  - Role: Data Scientist and Data Engineer  
+  - [Github](https://github.com/liviamanda) | [LinkedIn](https://www.linkedin.com/in/liviaamanda/)
 
-why is that?
+- **Alfarabi**
+  - Role: Data Analyst and Data Scientist  
+  - [Github](https://github.com/Alfarabi58) | [LinkedIn](https://www.linkedin.com/in/alfa-rabi-49b9b8285/)
+  
+- **Badriah Nursakinah**
+  - Role: Data Analyst  
+  - Github | LinkedIn
 
-- I'm god
-- my wisdom is endless
-- I spent thousands of hours creating this template
+<br />
 
-feel free to use it everytime and everywhere! `open source!`
+## 💾 **Dataset**
+
+The dataset is obtained from a credible source and comprises relevant details regarding airline reviews. For further information or to access the dataset, please refer to the provided source [here](https://www.kaggle.com/datasets/juhibhojani/airline-reviews/data).
+
+<br />
+
+## ⚠️ **Problem Statement**
+
+Choosing the right airline can greatly affect a traveler's overall experience, including comfort, service quality, and in-flight amenities. With many online reviews available, airline passengers often rely on these reviews to make informed decisions about which airline to choose. However, the large number of reviews can make it difficult and time-consuming to read through and understand the general opinion about an airline.
+
+FlightBuddy aims to solve this problem by using advanced Natural Language Processing (NLP) techniques to analyze airline reviews quickly and accurately. By processing and understanding a large number of reviews, FlightBuddy can determine whether the opinions in the reviews are positive or negative.
+
+<br />
+
+## 📌 **Objective**
+
+The main goal of FlightBuddy is to improve the decision-making process for travelers by providing personalized airline recommendations based on the analysis of review sentiments. Specifically, FlightBuddy aims to:
+- Analyze the sentiment of airline reviews to classify them as positive or negative, with accuracy serving as the metric.
+- Recommend five airlines with similar positive characteristics for users who have seen favorable reviews.
+- Suggest top-rated alternative airlines for users who have encountered negative experiences, ensuring they have better options for future travel.
 
 <br />
 
 ---
 
-## 🗒️ **INSTALLATION**
+## 🗒️ **Installation**
 
-### local installation:
+### Local Installation in Visual Studio Code:
 
-1. clone the repo
+1. **Clone the Repository**
+   - Clone the repository to your local machine using Git:
+     ```
+     git clone https://github.com/username/repo
+     ```
 
-```
-git clone https://github.com/username/repo
-```
+2. **Navigate to the Repository Directory**
+   - Change directory to the cloned repository:
+     ```
+     cd repo
+     ```
 
-2. cd into cloned repo
+3. **Open Visual Studio Code**
+   - Open the project directory in Visual Studio Code:
+     ```
+     code .
+     ```
 
-```
-cd repo
-```
+4. **Set Up a Python Virtual Environment (optional)**
+   - It's a good practice to use a virtual environment for Python projects. Here’s how to set up one in Visual Studio Code:
+     - Open the terminal in Visual Studio Code (Ctrl+` or View -> Terminal).
+     - Install the virtual environment if you haven't installed it:
+       ```
+       pip install virtualenv
+       ```
+     - Create a virtual environment:
+       ```
+       virtualenv venv
+       ```
+     - Activate the virtual environment:
+       - On Windows:
+         ```
+         .\venv\Scripts\activate
+         ```
+       - On MacOS/Linux:
+         ```
+         source venv/bin/activate
+         ```
 
-3. install dependencies
+5. **Install Dependencies**
+   - Install the required Python packages using pip:
+     ```
+     pip install -r requirements.txt
+     ```
 
-```
-pip3 install -r requirements.txt
-```
+6. **Run the Application**
+   - Run the Python script or application:
+     ```
+     python main.py
+     ```
 
-```
-yarn add react/icons
-```
+### Installation via Docker:
 
-```
-npm install express
-```
+If you prefer to use Docker, follow these steps:
 
-4. run the app
+1. **Build the Docker Image**
+   - Build an image from the Dockerfile present in your project directory:
+     ```
+     docker build -t app .
+     ```
 
-```
-python3 main.py
-```
+2. **Run the Docker Container**
+   - Run your application inside a Docker container:
+     ```
+     docker run -it app
+     ```
 
-```
-yarn dev
-```
+### Run Remotely via Docker:
 
-```
-npm run start
-```
+To run the Docker image from a remote repository:
 
-<br />
-
-### local installation via docker:
-
-1. clone the repo
-
-```
-git clone https://github.com/username/repo
-```
-
-2. cd into cloned repo
-
-```
-cd repo
-```
-
-3. build the app
-
-```
-docker build -t app .
-```
-
-4. run the app
-
-```
-docker run -ti app
-```
-
-<br/>
-
-### run remotely via docker:
-
-1. run the app
-
-```
-docker run -ti username/dockerimage:version
-```
+1. **Pull and Run the Docker Image**
+   - Pull the image from Docker Hub and run it:
+     ```
+     docker pull username/dockerimage:version
+     docker run -it username/dockerimage:version
+     ```
 
 <br />
 
@@ -124,52 +150,29 @@ docker run -ti username/dockerimage:version
 
 ## 🔎 **SHOWCASE**
 
-additional images, gifs or videos of your project
+Additional images, gifs, or videos of your project.
 
 <br />
 
 ---
 
-## 💻 **TECHNOLOGIES**
+## 💻 **Tools and Libraries**
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
-
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-
+![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
+![Seaborn](https://img.shields.io/badge/Seaborn-%238DD6F9.svg?style=for-the-badge&logo=seaborn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23D00000.svg?style=for-the-badge&logo=matplotlib&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+![NLTK](https://img.shields.io/badge/NLTK-%232376C6.svg?style=for-the-badge&logo=nltk&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+![WordCloud](https://img.shields.io/badge/WordCloud-%23FF8800.svg?style=for-the-badge&logo=wordcloud&logoColor=white)
+![TextBlob](https://img.shields.io/badge/TextBlob-%23157AF6.svg?style=for-the-badge&logo=textblob&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-
-for more badges visit:
-
-- https://github.com/alexandresanlim/Badges4-README.md-Profile/blob/master/README.md
-- https://github.com/Ileriayo/markdown-badges
-
-<br />
-
----
-
-## 📎 **LICENSE**
-
-MIT License
-
-Copyright © [year] [authorname]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=white)
 
 <br />
 
