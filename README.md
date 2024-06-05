@@ -1,197 +1,177 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15181173&assignment_repo_type=AssignmentRepo)
+<a name="readme-top"></a>
 
 <div align='center'>
-    <h1><b> FlightBuddy </b></h1>
-    <img src='' width='250' height='250' />
-    <p>Short description of the project.</p>
+    <h1><b>FlightBuddy</b></h1>
+    <img src='deployment/companyLogo.png'/>
+    <br><br>
+    <p>This project is focused on creating a Natural Language Processing (NLP) model that can determine if reviews are positive or negative (performing sentiment analysis) and provide recommendations based on the results.</p>
+    <br>
 
-![Python](https://badgen.net/badge/Python/[version]/blue?)
-![JavaScript](https://badgen.net/badge/JavaScript/[version]/yellow?)
-![TypeScript](https://badgen.net/badge/TypeScript/[version]/blue?)
-![Node.js](https://badgen.net/badge/Node.js/[version]/green?)
-![React](https://badgen.net/badge/React/[version]/cyan?)
-![Next.js](https://badgen.net/badge/Next.js/[version]/black?)
-![Go](https://badgen.net/badge/Go/[version]/cyan?)
-![Rust](https://badgen.net/badge/Rust/[version]/orange?)
-![Docker](https://badgen.net/badge/Docker/[version]/cyan?)
-![Size](https://img.shields.io/github/languages/code-size/[githubusername]/[repositoryname].svg)
-![License](https://img.shields.io/github/license/[githubusername]/[repositoryname].svg)
-![Top Language](https://img.shields.io/github/languages/top/[githubusername]/[repositoryname].svg)
-![GitHub version](https://badge.fury.io/gh/[githubusername]%2F[repositoryname].svg)
+![Python](https://badgen.net/badge/Python/3.9.18/blue?)
+![Streamlit](https://badgen.net/badge/Streamlit/1.10.0/orange?)
+![Pandas](https://badgen.net/badge/Pandas/1.4.3/blue?)
+![Seaborn](https://badgen.net/badge/Seaborn/0.11.2/green?)
+![Matplotlib](https://badgen.net/badge/Matplotlib/3.5.2/blue?)
+![Scikit-learn](https://badgen.net/badge/scikit-learn/1.4.2/yellow?)
+![Plotly](https://badgen.net/badge/Plotly/5.22.0/cyan?)
+![TensorFlow](https://badgen.net/badge/TensorFlow/2.15.0/orange?)
+![WordCloud](https://badgen.net/badge/WordCloud/1.8.1/purple?)
+![NLTK](https://badgen.net/badge/NLTK/3.7/red?)
+![Docker](https://badgen.net/badge/Docker/20.10/cyan?)
 
 </div>
 
 ---
 
-## 💾 **ABOUT**
+## 🧑‍💻 **Team Members**
 
-this is the **only** _README template_ for your project you will ever need in your life - **trust me**
+- **Livia Amanda Annafiah**
+  - Role: Data Scientist and Data Engineer  
+  - [Github](https://github.com/liviamanda) | [LinkedIn](https://www.linkedin.com/in/liviaamanda/)
 
-why is that?
+- **Alfarabi**
+  - Role: Data Analyst and Data Scientist  
+  - [Github](https://github.com/Alfarabi58) | [LinkedIn](https://www.linkedin.com/in/alfa-rabi-49b9b8285/)
+  
+- **Badriah Nursakinah**
+  - Role: Data Analyst  
+  - Github | [LinkedIn](https://www.linkedin.com/in/badriah-nursakinah-s-t-m-kom-247b20159/)
 
-- I'm god
-- my wisdom is endless
-- I spent thousands of hours creating this template
+<br />
 
-feel free to use it everytime and everywhere! `open source!`
+## 💾 **Dataset**
+
+The dataset is obtained from a credible source and comprises relevant details regarding airline reviews. For further information or to access the dataset, please refer to the provided source [here](https://www.kaggle.com/datasets/juhibhojani/airline-reviews/data).
+
+<br />
+
+## ⚠️ **Problem Statement**
+
+Choosing the right airline can greatly affect a traveler's overall experience, including comfort, service quality, and in-flight amenities. With many online reviews available, airline passengers often rely on these reviews to make informed decisions about which airline to choose. However, the large number of reviews can make it difficult and time-consuming to read through and understand the general opinion about an airline.
+
+FlightBuddy aims to solve this problem by using advanced Natural Language Processing (NLP) techniques to analyze airline reviews quickly and accurately. By processing and understanding a large number of reviews, FlightBuddy can determine whether the opinions in the reviews are positive or negative.
+
+<br />
+
+## 📌 **Objective**
+
+The main goal of FlightBuddy is to improve the decision-making process for travelers by providing personalized airline recommendations based on the analysis of review sentiments. Specifically, FlightBuddy aims to:
+- Analyze the sentiment of airline reviews to classify them as positive or negative, with accuracy serving as the metric.
+- Recommend five airlines with similar positive characteristics for users who have seen favorable reviews.
+- Suggest top-rated alternative airlines for users who have encountered negative experiences, ensuring they have better options for future travel.
 
 <br />
 
 ---
 
-## 🗒️ **INSTALLATION**
+## 🗒️ **Setup and Installation**
 
-### local installation:
+To get started with FlightBuddy, ensure you have the following prerequisites:
 
-1. clone the repo
+- **Dataset**: Accessible [here](https://www.kaggle.com/datasets/juhibhojani/airline-reviews/data).
+- **Python**: Version 3.9.18 or later.
+- **Docker**: Version 20.10 or later for container deployment.
 
-```
-git clone https://github.com/username/repo
-```
+### **Environment Configuration**  
+Ensure you have all necessary Python packages by installing them from the provided `requirements.txt`. Also, ensure Docker is set up if you prefer containerized environments.
 
-2. cd into cloned repo
+### **Project Setup**  
+Follow these steps to set up the project:
 
-```
-cd repo
-```
+1. **Clone the Repository**
+   Clone this repository to your local machine. Choose the method that best suits your setup:
+   - **HTTPS**:
+     ```
+     git clone https://github.com/FTDS-assignment-bay/p2-final-project-flightbuddy/
+     ```
+   - **SSH**:
+     ```
+     git clone git@github.com:FTDS-assignment-bay/p2-final-project-flightbuddy.git
+     ```
 
-3. install dependencies
-
+2. **Compose Docker Containers (Optional)**  
+   If you prefer using Docker, build and run the Docker container as follows:
 ```
-pip3 install -r requirements.txt
-```
-
-```
-yarn add react/icons
-```
-
-```
-npm install express
-```
-
-4. run the app
-
-```
-python3 main.py
+docker build -t flightbuddy-app .
+docker run -it flightbuddy-app
 ```
 
-```
-yarn dev
-```
 
+3. **Environment Setup**  
+- Navigate to the cloned directory:
+  ```
+  cd p2-final-project-flightbuddy
+  ```
+- Set up a virtual environment (optional but recommended):
+  ```
+  python -m venv venv
+  source venv/bin/activate  # On MacOS/Linux
+  .\venv\Scripts\activate   # On Windows
+  ```
+- Install the required dependencies:
+  ```
+  pip install -r requirements.txt
+  ```
+
+4. **Run the Application**  
+Execute the main application script:
 ```
-npm run start
-```
-
-<br />
-
-### local installation via docker:
-
-1. clone the repo
-
-```
-git clone https://github.com/username/repo
-```
-
-2. cd into cloned repo
-
-```
-cd repo
-```
-
-3. build the app
-
-```
-docker build -t app .
+python app.py
 ```
 
-4. run the app
+5. **Access and Use**  
+After starting the application, you can access and interact with it as specified in your project documentation.
 
-```
-docker run -ti app
-```
+### **Additional Resources**  
+For further exploration or modifications, access the full project documentation and source code on the [GitHub repository](https://github.com/FTDS-assignment-bay/p2-final-project-flightbuddy/).
 
-<br/>
-
-### run remotely via docker:
-
-1. run the app
-
-```
-docker run -ti username/dockerimage:version
-```
-
-<br />
+By following these setup instructions, you'll be able to replicate the FlightBuddy project and explore its functionalities related to analyzing airline review sentiments.
 
 ---
 
-## 🔎 **SHOWCASE**
+## 💻 **Tools and Libraries**
 
-additional images, gifs or videos of your project
-
-<br />
-
----
-
-## 💻 **TECHNOLOGIES**
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
-
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-
+![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)
-
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
+![Seaborn](https://img.shields.io/badge/Seaborn-%238DD6F9.svg?style=for-the-badge&logo=seaborn&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-%23D00000.svg?style=for-the-badge&logo=matplotlib&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+![NLTK](https://img.shields.io/badge/NLTK-%232376C6.svg?style=for-the-badge&logo=nltk&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+![WordCloud](https://img.shields.io/badge/WordCloud-%23FF8800.svg?style=for-the-badge&logo=wordcloud&logoColor=white)
+![TextBlob](https://img.shields.io/badge/TextBlob-%23157AF6.svg?style=for-the-badge&logo=textblob&logoColor=white)
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-
-for more badges visit:
-
-- https://github.com/alexandresanlim/Badges4-README.md-Profile/blob/master/README.md
-- https://github.com/Ileriayo/markdown-badges
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=white)
 
 <br />
 
----
-
-## 📎 **LICENSE**
-
-MIT License
-
-Copyright © [year] [authorname]
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## 🔄 **Workflow**
+- Data Analyst (DA): Responsible for creating visualizations to provide insights from the data.
+- Data Scientist (DS): Develops the NLP model and the recommender system, and handles deployment using Streamlit.
+- Data Engineer (DE): Manages databases, manipulates data in PostgreSQL, and schedules tasks using Elasticsearch.
 
 <br />
 
----
+## 📂 **File Descriptions**
+- final_project_DAG.py: Contains the engineering workflows and pipelines.
+- final_project_NLP.ipynb: Notebook for developing the NLP model, including training and preprocessing.
+- final_project_NLP_inference.ipynb: Notebook for testing the NLP model with unseen data.
+- final_project_query_recsys.sql: SQL script for manipulating tables for the recommender system.
+- final_project_recsys.ipynb: Notebook for developing the recommender system.
 
-## 📌 **LINKS**
+<br />
 
-[<img alt="Github" src="https://img.shields.io/badge/[username]-%23181717.svg?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/[username])
-[<img alt="Twitter" src="https://img.shields.io/badge/[username]-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" />](https://twitter.com/[username])
-[<img alt="Instagram" src="https://img.shields.io/badge/[username]-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" />](https://instagram.com/[username])
-[<img alt="Youtube" src="https://img.shields.io/badge/[username]-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" />](https://www.youtube.com/channel/[username])
+## 🚀 **Deployment**
+The application is deployed on Hugging Face Spaces. Access it using the following link:
+[FlightBuddy on Hugging Face](https://huggingface.co/spaces/liviamanda/FlightBuddy)
 
-[<img alt="Reddit" src="https://img.shields.io/badge/[username]-FF4500?style=for-the-badge&logo=reddit&logoColor=white" />](https://reddit.com/user/[username])
-[<img alt="TikTok" src="https://img.shields.io/badge/[username]-%23000000.svg?style=for-the-badge&logo=TikTok&logoColor=white" />](https://www.tiktok.com/@[username])
-[<img alt="Gitlab" src="https://img.shields.io/badge/[username]-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white" />](https://gitlab.com/[username])
-[<img alt="Dribbble" src="https://img.shields.io/badge/[username]-EA4C89?style=for-the-badge&logo=dribbble&logoColor=white" />](https://dribbble.com/[username])
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[<img alt="Stack Overflow" src="https://img.shields.io/badge/[username]-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" />](https://stackoverflow.com/users/[usercode]/[username])
-[<img alt="Discord" src="https://img.shields.io/badge/[username%23code]-%237289DA.svg?style=for-the-badge&logo=discord&logoColor=white" />]()
-[<img alt="Steam" src="https://img.shields.io/badge/[username]-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white" />](https://steamcommunity.com/id/[username])
-[<img alt="Spotify" src="https://img.shields.io/badge/[username]-1ED760?style=for-the-badge&logo=spotify&logoColor=white" />](https://open.spotify.com/user/[username])
+
+
+
 
