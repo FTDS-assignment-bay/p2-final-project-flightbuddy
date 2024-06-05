@@ -144,3 +144,30 @@ By following these setup instructions, you'll be able to replicate the FlightBud
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Google%20Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=white)
+
+<br />
+
+## 🔄 **Workflow**
+- Data Analyst (DA): Responsible for creating visualizations to provide insights from the data.
+- Data Scientist (DS): Develops the NLP model and the recommender system, and handles deployment using Streamlit.
+- Data Engineer (DE): Manages databases, manipulates data in PostgreSQL, and schedules tasks using Elasticsearch.
+
+<br />
+
+## 📂 **File Descriptions**
+- final_project_DAG.py: Contains the engineering workflows and pipelines.
+- final_project_NLP.ipynb: Notebook for developing the NLP model, including training and preprocessing.
+- final_project_NLP_inference.ipynb: Notebook for testing the NLP model with unseen data.
+- final_project_query_recsys.sql: SQL script for manipulating tables for the recommender system.
+- final_project_recsys.ipynb: Notebook for developing the recommender system.
+
+<br />
+
+## 🚀 **Deployment**
+The application is deployed on Hugging Face Spaces. Access it using the following link:
+[FlightBuddy on Hugging Face](https://huggingface.co/spaces/liviamanda/FlightBuddy)
+
+
+
+
+
