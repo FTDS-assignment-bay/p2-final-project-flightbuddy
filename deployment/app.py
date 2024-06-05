@@ -28,8 +28,9 @@ st.sidebar.write('''### Tools Utilized:
 
 # Define the Home Page
 def show_home():
-    st.image('logoCompany.png', caption='Source: Canva')
-    st.write('''This tool provides functionalities for Exploratory Data Analysis and Prediction regarding airline reviews. Use the navigation pane on the left to select the module you wish to utilize.''')
+    st.image('companyLogo.png')
+    st.write('')
+    st.write('''This application is specifically designed to facilitate both exploratory data analysis and predictive modeling regarding airline reviews. It provides users with advanced analytical tools that help in understanding trends and patterns within the data. To begin, please use the navigation menu on the left side of the screen to select the particular module that you intend to explore. Whether you're looking to uncover insights or forecast future trends, this tool equips you with the necessary resources to effectively analyze the feedback from airline passengers.''')
     st.markdown('---')
     
     # Dataset section

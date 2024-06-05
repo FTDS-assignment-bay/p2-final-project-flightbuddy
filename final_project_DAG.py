@@ -12,7 +12,7 @@ Team Members    :
 - Badriah Nursakinah
 
 Dataset         : https://www.kaggle.com/datasets/juhibhojani/airline-reviews/data
-Hugging Face    :
+Hugging Face    : https://huggingface.co/spaces/liviamanda/FlightBuddy
 
 Problem Statement :
 Choosing the right airline can greatly affect a traveler's overall experience, including comfort, service quality, and in-flight amenities. With many online reviews available, airline passengers often rely on these reviews to make informed decisions about which airline to choose. However, the large number of reviews can make it difficult and time-consuming to read through and understand the general opinion about an airline.
