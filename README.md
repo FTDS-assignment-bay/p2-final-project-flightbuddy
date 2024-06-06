@@ -35,7 +35,7 @@
   
 - **Badriah Nursakinah**
   - Role: Data Analyst  
-  - Github | [LinkedIn](https://www.linkedin.com/in/badriah-nursakinah-s-t-m-kom-247b20159/)
+  - [Github](https://github.com/Badriah1989/Project_badriah_nursakinah) | [LinkedIn](https://www.linkedin.com/in/badriah-nursakinah-s-t-m-kom-247b20159/)
 
 <br />
 
