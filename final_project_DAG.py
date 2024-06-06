@@ -205,14 +205,10 @@ with DAG ('flightBuddy',
           # Second task : calling 'clean_data' function
           cleanData = PythonOperator(task_id = 'CleanData',
                                      python_callable = clean_data)
-          
-          # Third task : calling 'rating_table' function
-          convertData = PythonOperator(task_id = 'convertData',
-                                     python_callable = convert_data)
 
           # Third task : calling 'insert_data' function
           insertData = PythonOperator(task_id = 'InsertData',
                                       python_callable = insert_data)
 
 # Set up the task dependencies
-getData >> cleanData >> convertData >> insertData
+getData >> cleanData >> insertData
